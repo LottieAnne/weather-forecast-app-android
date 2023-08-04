@@ -15,4 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "weather-forecast-app-android"
 include(":app")
- 
+include(":ui")
