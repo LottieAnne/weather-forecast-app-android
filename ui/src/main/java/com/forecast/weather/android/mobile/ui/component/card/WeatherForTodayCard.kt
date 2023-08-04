@@ -31,7 +31,7 @@ internal fun WeatherForTodayCard(
                             Color.Blue,
                             Color.Magenta
                         )
-                    ), alpha = 0.8F
+                    ), alpha = 0.7F
                 ),
             horizontalAlignment = Alignment.CenterHorizontally,
         ) {
