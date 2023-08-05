@@ -14,6 +14,8 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.sp
 import com.forecast.weather.android.mobile.ui.component.SimpleSpacer
+import com.forecast.weather.android.mobile.ui.theme.PurpleEndBackground
+import com.forecast.weather.android.mobile.ui.theme.PurpleStartBackground
 import com.forecast.weather.android.mobile.ui.theme.Spacing
 
 // TODO: あとからAPIつなぎこむ
@@ -23,15 +25,13 @@ internal fun WeatherForTodayCard(
 ) {
     Card {
         Column(
-            modifier = Modifier
+            modifier = modifier
                 .fillMaxWidth()
                 .background(
                     Brush.linearGradient(
-                        colors = listOf(
-                            Color.Blue,
-                            Color.Magenta
-                        )
-                    ), alpha = 0.7F
+                        // TODO: あとから削除
+                        colors = listOf(PurpleStartBackground, PurpleEndBackground)
+                    )
                 ),
             horizontalAlignment = Alignment.CenterHorizontally,
         ) {
