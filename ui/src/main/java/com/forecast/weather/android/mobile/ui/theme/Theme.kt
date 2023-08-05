@@ -16,15 +16,15 @@ import androidx.compose.ui.platform.LocalView
 import androidx.core.view.WindowCompat
 
 private val DarkColorScheme = darkColorScheme(
-    primary = Purple80,
-    secondary = PurpleGrey80,
-    tertiary = Pink80
+    primary = com.forecast.weather.android.mobile.ui.theme.Purple80,
+    secondary = com.forecast.weather.android.mobile.ui.theme.PurpleGrey80,
+    tertiary = com.forecast.weather.android.mobile.ui.theme.Pink80
 )
 
 private val LightColorScheme = lightColorScheme(
-    primary = Purple40,
-    secondary = PurpleGrey40,
-    tertiary = Pink40
+    primary = com.forecast.weather.android.mobile.ui.theme.Purple40,
+    secondary = com.forecast.weather.android.mobile.ui.theme.PurpleGrey40,
+    tertiary = com.forecast.weather.android.mobile.ui.theme.Pink40
 
     /* Other default colors to override
     background = Color(0xFFFFFBFE),
