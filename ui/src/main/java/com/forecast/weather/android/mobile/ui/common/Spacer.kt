@@ -1,4 +1,4 @@
-package com.forecast.weather.android.mobile.ui.component
+package com.forecast.weather.android.mobile.ui.common
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.ColumnScope
