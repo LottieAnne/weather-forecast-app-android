@@ -4,7 +4,10 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.material3.Card
+import androidx.compose.material3.CardColors
+import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Text
+import androidx.compose.material3.contentColorFor
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -23,16 +26,12 @@ import com.forecast.weather.android.mobile.ui.theme.Spacing
 internal fun WeatherForTodayCard(
     modifier: Modifier = Modifier,
 ) {
-    Card {
+    Card(
+        colors = CardDefaults.cardColors(containerColor = Color.Transparent)
+    ) {
         Column(
             modifier = modifier
-                .fillMaxWidth()
-                .background(
-                    Brush.linearGradient(
-                        // TODO: あとから削除
-                        colors = listOf(PurpleStartBackground, PurpleEndBackground)
-                    )
-                ),
+                .fillMaxWidth(),
             horizontalAlignment = Alignment.CenterHorizontally,
         ) {
             Text(text = "天気内容", color = Color.White, fontSize = 12.sp)
