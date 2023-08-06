@@ -10,7 +10,6 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Text
-import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -47,7 +46,14 @@ private fun HomeScreen(
     ) {
         Column {
             Column(modifier = Modifier.padding(end = Spacing.M)) {
-                WeatherForTodayCard()
+                WeatherForTodayCard(
+                    weather = "Mostly Cloudy",
+                    date = "",
+                    time = "10:00 AM",
+                    temperature = 25,
+                    highestTemperature = 27,
+                    lowestTemperature = 18,
+                )
 
                 SimpleSpacer(height = Spacing.M)
 
@@ -64,13 +70,13 @@ private fun HomeScreen(
                         text = "Today",
                         color = OrangeYellow,
                         fontWeight = FontWeight.Bold,
-                        fontSize = 16.sp
+                        fontSize = 20.sp
                     )
 
                     Text(text = "Next 7 Days  >",
                          color = Color.White,
                         fontWeight = FontWeight.Bold,
-                        fontSize = 12.sp,
+                        fontSize = 14.sp,
                         modifier = Modifier.clickable {  }
                     )
                 }

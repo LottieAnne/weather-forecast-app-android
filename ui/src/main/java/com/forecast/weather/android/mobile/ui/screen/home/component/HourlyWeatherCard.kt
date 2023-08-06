@@ -36,21 +36,21 @@ internal fun HourlyWeatherCard(
         Row(
             modifier = modifier
                 .background(color = PurpleBlue)
-                .padding(vertical = Spacing.XXS, horizontal = Spacing.M),
+                .padding(all = Spacing.XS),
             horizontalArrangement = Arrangement.SpaceEvenly
         ) {
             Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                Text(text = "時間", color = Color.White, fontSize = 8.sp)
+                Text(text = "時間", color = Color.White, fontSize = 14.sp)
                 SimpleSpacer(height = Spacing.XXS)
 
                 Text(
                     text = "画像",
                     color = Color.White,
-                    fontSize = 12.sp,
+                    fontSize = 45.sp,
                 )
                 SimpleSpacer(height = Spacing.XXS)
 
-                Text(text = "気温", color = Color.White, fontSize = 8.sp)
+                Text(text = "気温", color = Color.White, fontSize = 18.sp)
                 SimpleSpacer(height = Spacing.XXS)
             }
         }
