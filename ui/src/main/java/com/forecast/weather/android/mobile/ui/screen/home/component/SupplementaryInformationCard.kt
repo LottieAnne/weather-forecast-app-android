@@ -1,4 +1,4 @@
-package com.forecast.weather.android.mobile.ui.component.card
+package com.forecast.weather.android.mobile.ui.screen.home.component
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
@@ -19,13 +19,13 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.forecast.weather.android.mobile.ui.component.SimpleSpacer
+import com.forecast.weather.android.mobile.ui.common.SimpleSpacer
 import com.forecast.weather.android.mobile.ui.theme.Purple40
 import com.forecast.weather.android.mobile.ui.theme.PurpleBlue
 import com.forecast.weather.android.mobile.ui.theme.Spacing
 
 @Composable
-internal fun HourlyWeatherCard(
+internal fun SupplementaryInformationCard(
     modifier: Modifier = Modifier,
 ) {
     // TODO: APIつなぎこみ
@@ -38,21 +38,55 @@ internal fun HourlyWeatherCard(
         Row(
             modifier = modifier
                 .background(color = PurpleBlue)
-                .padding(vertical = Spacing.XXS, horizontal = Spacing.M),
+                .fillMaxWidth()
+                .padding(vertical = Spacing.S),
             horizontalArrangement = Arrangement.SpaceEvenly
         ) {
             Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                Text(text = "時間", color = Color.White, fontSize = 8.sp)
+                Text(text = "画像", color = Color.White, fontSize = 12.sp)
                 SimpleSpacer(height = Spacing.XXS)
 
                 Text(
-                    text = "画像",
+                    text = "数値",
                     color = Color.White,
                     fontSize = 12.sp,
+                    fontWeight = FontWeight.Bold
                 )
                 SimpleSpacer(height = Spacing.XXS)
 
-                Text(text = "気温", color = Color.White, fontSize = 8.sp)
+                Text(text = "内容", color = Color.White, fontSize = 12.sp)
+                SimpleSpacer(height = Spacing.XXS)
+            }
+
+            Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                Text(text = "画像", color = Color.White, fontSize = 12.sp)
+                SimpleSpacer(height = Spacing.XXS)
+
+                Text(
+                    text = "数値",
+                    color = Color.White,
+                    fontSize = 12.sp,
+                    fontWeight = FontWeight.Bold
+                )
+                SimpleSpacer(height = Spacing.XXS)
+
+                Text(text = "内容", color = Color.White, fontSize = 12.sp)
+                SimpleSpacer(height = Spacing.XXS)
+            }
+
+            Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                Text(text = "画像", color = Color.White, fontSize = 12.sp)
+                SimpleSpacer(height = Spacing.XXS)
+
+                Text(
+                    text = "数値",
+                    color = Color.White,
+                    fontSize = 12.sp,
+                    fontWeight = FontWeight.Bold
+                )
+                SimpleSpacer(height = Spacing.XXS)
+
+                Text(text = "内容", color = Color.White, fontSize = 12.sp)
                 SimpleSpacer(height = Spacing.XXS)
             }
         }
@@ -61,6 +95,6 @@ internal fun HourlyWeatherCard(
 
 @Preview
 @Composable
-private fun HourlyWeatherCardPreview() {
-    HourlyWeatherCard()
+private fun SupplementaryInformationCardPreview() {
+    SupplementaryInformationCard()
 }

@@ -16,3 +16,5 @@ val PurpleEndBackground = Color(0xFF643D67)
 
 // カードの背景色
 val PurpleBlue = Color(0xFF331866)
+
+val OrangeYellow = Color(0xFFDCA900)
